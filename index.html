@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attractive Cards</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2.5rem;
+	font-size: 15px;
+}
+
+#navbar a {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right-nav {
+    display: flex;
+}
+
+#right-nav a {
+    padding-left: 2rem;
+}
+
+#icon-logo a {
+    height: 60;
+}
+
+body {
+    background-color: #F9F9F9;
+    width: 100%;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* Menghindari pembungkusan konten ke baris baru */
+  max-width: 1200px;
+  margin: 40px auto; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  min-width: 250px;
+  max-width: 280px;
+  height: 400px;
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d3d4d2;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.card:hover .box {
+  transform: translateY(-10px);
+}
+
+.card .box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #eff5e5, #cae689);
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.card .box .content {
+  z-index: 1;
+}
+
+.card .box .content h2 {
+  color: #000000;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.card .box .content h3 {
+  color: #000000;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card .box .content p {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #ededec;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: background 0.5s, color 0.5s;
+}
+
+.card .box .content a:hover {
+  background: #000000;
+  color: #dad4d4;
+}
+
+.dropbtn {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2rem;
+	font-size: 15px;
+	border: none;
+	border-radius: 4px;
+	color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #070705;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  display: block;
+  font-size: 14px !important;
+}
+
+.dropdown-content a:hover {background-color: #0F2D53;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0F2D53;}
+
+.pill-nav a {
+  display: inline-box;
+  color: #0F2D53;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.pill-nav a:hover {
+  background-color: #0F2D53;
+  justify-content: space-between;
+}
+
+.pill-nav a:hover span {
+  padding-right: 25px;
+}
+
+#footer {
+    padding: 25rem;
+    border-top: 0px;
+    text-align: center;
+	color: #070705;
+	font-size: 10px;
+	margin-top: 10rem;
+}
+</style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="navbar">
+            <div id="left-nav">
+                <div id="logo-icon">
+                    <a href="home.html">
+                        <img src="Lambang UGM.png" height="60" alt="LambangUGM">
+                    </a>
+                </div>
+            </div>
+            <div id="right-nav">
+                <div class="pill-nav">
+                    <a href="index.html">Beranda</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Peta Genangan <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="Kelurahan Muarareja.html">Kelurahan Muarareja</a>
+                            <a href="Kelurahan Tegalsari.html">Kelurahan Tegalsari</a>
+                            <a href="Kelurahan Mintaragen.html">Kelurahan Mintaragen</a>
+                            <a href="Kelurahan Panggung.html">Kelurahan Panggung</a>
+                        </div>
+                    </div>
+                    <a href="Informasi.html">Informasi</a>
+                    <a href="Kontak.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>Kelurahan Muarareja</h3>
+          <p>Kelurahan Muarareja terletak di Kecamatan Tegal Barat</p>
+          <a href="Kelurahan Muarareja.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Kelurahan Tegalsari</h3>
+          <p>Kelurahan Tegalsari terletak di Kecamatan Tegal Barat</p>
+          <a href="Kelurahan Tegalsari.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Kelurahan Mintaragen</h3>
+          <p>Kelurahan Mintaragen terletak di Kecamatan Tegal Timur</p>
+          <a href="Kelurahan Mintaragen.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>04</h2>
+            <h3>Kelurahan Panggung</h3>
+            <p>Kelurahan Panggung terletak di Kecamatan Tegal Timur</p>
+            <a href="Kelurahan Panggung.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div id="footer">
+    <i>@Copyright Geographic Information System Gadjah Mada University 2024</i>
+ </div>
+
+<script>
+// Get all card elements
+const cards = document.querySelectorAll('.card');
+
+// Loop through each card
+cards.forEach((card, index) => {
+  // Add event listener for mouseenter
+  card.addEventListener('mouseenter', () => {
+    // Get the content box of the card
+    const box = card.querySelector('.box');
+    // Add class 'hover' to the content box
+    box.classList.add('hover');
+  });
+
+  // Add event listener for mouseleave
+  card.addEventListener('mouseleave', () => {
+    // Get the content box of the card
+    const box = card.querySelector('.box');
+    // Remove class 'hover' from the content box
+    box.classList.remove('hover');
+  });
+});
+</script>
+
+</body>
+
+</html>
