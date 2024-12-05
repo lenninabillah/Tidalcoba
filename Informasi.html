@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="..\CODE\SKRIPSI\Naqibah\CSS">
+    <title>Informasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2.5rem;
+	font-size: 15px;
+}
+
+#navbar a {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right-nav {
+    display: flex;
+}
+
+#right-nav a {
+    padding-left: 2rem;
+}
+
+#icon-logo a {
+    height: 60;
+}
+
+body {
+    background-color: #F9F9F9;
+    width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  top: 175px;
+  left: calc(42.5% - 300px);
+  display: flex;
+}
+
+.dropbtn {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2rem;
+	font-size: 15px;
+	border: none;
+	border-radius: 4px;
+	color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #070705;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #202020;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0F2D53;}
+
+.pill-nav a {
+  display: inline-box;
+  color: #0F2D53;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.pill-nav a:hover {
+  background-color: #0F2D53;
+  color: #070705;
+  justify-content: space-between;
+}
+
+.pill-nav a:hover span {
+  padding-right: 25px;
+}
+
+* {box-sizing: border-box}
+
+body2, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.tablink:hover {
+  background-color: #0F2D53;
+}
+
+.tablink {
+  background-color: #E6E6E6;
+  color: #070705;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 15px;
+  width: 50%;
+  transition: 0.3s
+}
+
+.tablink hover {
+  overflow: hidden;
+  background-color: #777;
+}
+
+.tabcontent {
+  overflow: hidden;
+  color: #070705;
+  display: none;
+  padding: 30px;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#Penanganan {background-color: #F9F9F9;}
+#Penyebab {background-color: #F9F9F9;}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #E0EECA;
+  color: #070705;
+  float: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.chip:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: -50%;
+  border-radius: 20px;
+  background-color: #EBEBEB;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container2 {
+  padding: 2px 16px;
+}
+
+
+.container4 {
+  padding: 2px 16px;
+}
+
+ul {
+  list-style: none;
+  margin-left: -1.7rem;
+  margin-right: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #070705;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body3 {
+  background-color: #F9F9F9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #E0EECA;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.container5 {
+  padding: 10px 30px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container5::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: #E0EECA;
+  border: 4px solid #0F2D53;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 13px;
+  width: 0;
+  z-index: 1;
+  right: 21px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #E0EECA;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 12px;
+  width: 0;
+  z-index: 1;
+  left: 22px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #E0EECA transparent #E0EECA;
+}
+
+.right::after {
+  left: -13px;
+}
+
+.content {
+  padding: 5px 30px;
+  background-color: #E0EECA;
+  position: relative;
+  border-radius: 7px;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.content2 {
+  padding: 5px 30px;
+  background-color: #E0EECA;
+  position: relative;
+  border-radius: 7px;
+  text-align: right;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.content2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+.timeline::after {
+  left: 31px;
+  }
+  
+.container5 {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+.container5::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+.left::after, .right::after {
+  left: 15px;
+  }
+  
+.right {
+  left: 0%;
+  }
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+#footer {
+    padding: 1rem;
+    border-top: 0px;
+    text-align: center;
+	color: #070705;
+	font-size: 10px;
+}
+	</style>
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <div id="left-nav">
+                <div id="logo-icon">
+                    <a href="#">
+                        <img src="Lambang UGM.png" height="60" alt="LambangUGM"></a>
+                </div>
+            </div>
+            <div id="right-nav">
+				<div class="pill-nav">
+                <a href="index.html">Beranda</a>
+					<div class="dropdown">
+						<button class="dropbtn">Peta Genangan <i class="fa fa-caret-down"></i></button>
+							<div class="dropdown-content">
+                <a href="Kelurahan Muarareja.html">Kelurahan Muarareja</a>
+                <a href="Kelurahan Tegalsari.html">Kelurahan Tegalsari</a>
+                <a href="Kelurahan Mintaragen.html">Kelurahan Mintaragen</a>
+                <a href="Kelurahan Panggung.html">Kelurahan Panggung</a>
+							</div>
+						</div>
+                <a href="Informasi.html">Informasi</a>
+                <a href="Kontak.html">Kontak</a>
+				</div>
+			</div>
+        </div>
+    </div> 
+	<div id="body2">
+		<button class="tablink" onmouseover="openPage('Penyebab', this, '#E0EECA')">Penyebab Banjir Rob</button>
+    <button class="tablink" onmouseover="openPage('Penanganan', this, '#E0EECA')" id="defaultOpen">Penanganan Banjir Rob</button>
+		<div id="Penanganan" class="tabcontent">
+			<h1><b>Penanganan Banjir Rob</b></h1>
+			<p>Pantai Utara Kota Tegal</p>
+				<div class="row">
+					<div class="column" style="background-color:#F9F9F9;">
+						<div class="chip">
+							<img width="48" height="48" src="https://img.icons8.com/emoji/48/warning-emoji.png" alt="warning-emoji"/><b>Sebelum Terjadi Banjir Rob</b>
+						</div>
+						<div class="card">
+							<div class="container2">
+								<ul>
+									<li>Pemeliharaan saluran drainase</li>
+									<li>Penanaman tumbuhan bakau</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column" style="background-color:#F9F9F9;">
+						<div class="chip">
+							<img width="100" height="100" src="https://img.icons8.com/clouds/100/000000/crowd--v2.png" alt="crowd--v2"/><b>Saat Terjadi Banjir Rob</b>
+						</div>
+						<div class="card">
+							<div class="container2">
+								<ul>
+									<li>Matikan aliran listrik rumah</li>
+									<li>Mengamankan barang berharga ke tempat tinggi</li>
+									<li>Melakukan evakuasi ke tempat yang lebih aman</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column" style="background-color:#F9F9F9;">
+						<div class="chip">
+							<img width="100" height="100" src="https://img.icons8.com/clouds/100/000000/building.png" alt="building"/><b>Setelah Terjadi Banjir Rob</b>
+						</div>
+						<div class="card">
+							<div class="container2">
+								<ul>
+									<li>Membersihkan rumah menggunakan antiseptik</li>
+									<li>Waspada terhadap kemungkinan binatang berbisa</i></li>
+									<li>Usahakan selalu waspada terhadap terhadap banjir susulan</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<div id="Penyebab" class="tabcontent">
+			<h1><b>Penyebab Banjir Rob</b></h1>
+			<p>Pantai Utara Kota Tegal</p>
+				<div class="timeline">
+					<div class="container5 left">
+						<div class="content" style="color:#070705">
+							<h5><b>Pasang Surut dan Gelombang Tinggi</b></h5>
+							<p>Banjir rob sering terjadi karena kombinasi pasang surut tinggi dan gelombang laut yang kuat. Fenomena ini dapat diperparah oleh peningkatan tinggi permukaan air laut akibat pemanasan global.</p>
+						</div>
+					</div>
+					<div class="container5 right">
+						<div class="content2" style="color:#070705">
+							<h5><b>Topografi</b></h5>
+							<p>Terjadinya banjir rob dapat dipengaruhi oleh topografi lokal. Wilayah yang rendah atau datar cenderung lebih rentan terhadap banjir rob karena air laut lebih mudah menembus ke daratan.</p>
+						</div>
+					</div>
+					<div class="container5 left">
+						<div class="content" style="color:#070705">
+							<h5><b>Curah Hujan Ekstrem</b></h5>
+							<p>Hujan lebat secara lokal atau aliran sungai yang tinggi dapat menyebabkan genangan air laut di muara sungai, memperparah banjir rob di daerah pesisir.</p>
+						</div>
+					</div>
+					<div class="container5 right">
+						<div class="content2" style="color:#070705">
+							<h5><b>Perubahan Iklim</b></h5>
+							<p>Perubahan iklim dapat memperkuat dan mempercepat fenomena banjir rob melalui peningkatan tinggi permukaan air laut, intensitas curah hujan, dan frekuensi badai tropis.</p>
+						</div>
+					</div>
+					<div class="container5 left">
+						<div class="content" style="color:#070705">
+							<h5><b>Pembangunan Pesisir yang Tidak Terkendali</b></h5>
+							<p>Pembangunan pesisir yang tidak terkendali, termasuk reklamasi lahan, pemotongan bukit, dan pembangunan di daerah rawan banjir rob, dapat meningkatkan kerentanan terhadap banjir rob.</p>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+	</div>
+	<div class="clearfix"></div>
+	
+	<div id="footer">
+       <i>@Copyright Geographic Information System Gadjah Mada University 2024</i>
+	   <div>
+		<a href="https://icons8.com/icon/5tH5sHqq0t2q/warning">Warning</a>
+		<a href="https://icons8.com/icon/gjmZ3hx3Krn5/crowd"></a>
+		<a href="https://icons8.com/icon/122513/building"></a>
+		<a href="https://icons8.com/icon/KwJ_oShFEoN7/elections"></a>
+		<a href="https://icons8.com/icon/C_V70EYm_D4j/road-roller"></a>
+		<a href="https://icons8.com/icon/R9_BvokvH9Bo/rainwater-catchment"></a>
+		<a href="https://icons8.com/icon/pu2MfAM7qtF0/trash"></a>
+		<a href="https://icons8.com/icon/AeNIbTkJqfHz/power-plant"></a>
+		<a href="https://icons8.com/icon/tCoFMHOpJqoM/water-cooler"></a>
+		<a href="https://icons8.com/icon/kz5Ukn1ryalq/fire-extinguisher"></a>
+		<i>Icon by</i><a href="https://icons8.com"><i> Icons8</i></a></div>
+    </div>
+<script>
+	function openPage(pageName,elmnt,color) {
+	var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+		tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].style.backgroundColor = "";
+	}
+		document.getElementById(pageName).style.display = "block";
+		elmnt.style.backgroundColor = color;
+	}
+	
+	var elements = document.getElementsByClassName("column");
+	var i;
+
+	function gridView() {
+		for (i = 0; i < elements.length; i++) {
+			elements[i].style.width = "50%";
+		}
+	}
+
+	var container = document.getElementById("btnContainer");
+	var btns = container.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+	var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+		});
+	}
+</script>
+</body>
+</html>

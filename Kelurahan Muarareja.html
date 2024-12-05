@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peta Kelurahan Muarareja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2.5rem;
+	font-size: 15px;
+}
+
+#navbar a {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right-nav {
+    display: flex;
+}
+
+#right-nav a {
+    padding-left: 2rem;
+}
+
+#icon-logo a {
+    height: 60;
+}
+
+body {
+    background-color: #F9F9F9;
+    width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 12px;
+}
+
+.container {
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  top: 175px;
+  left: calc(42.5% - 300px);
+  display: flex;
+}
+
+.dropbtn {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2D53;
+    padding: 0.5rem 2rem;
+	font-size: 15px;
+	border: none;
+	border-radius: 4px;
+	color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #070705;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #202020;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0F2D53;}
+
+.pill-nav a {
+  display: inline-box;
+  color: #0F2D53;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.pill-nav a:hover {
+  background-color: #0F2D53;
+  justify-content: space-between;
+}
+
+.pill-nav a:hover span {
+  padding-right: 25px;
+}
+
+.container-map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 41.5%; 
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#footer {
+    padding: 1rem;
+    border-top: 0px;
+    text-align: center;
+	color: #070705;
+	font-size: 10px;
+}
+	</style>
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <div id="left-nav">
+                <div id="logo-icon">
+                    <a href="#">
+                        <img src="Lambang UGM.png" height="60" alt="LambangUGM"></a>
+                </div>
+            </div>
+            <div id="right-nav">
+				<div class="pill-nav">
+                <a href="index.html">Beranda</a>
+					<div class="dropdown">
+						<button class="dropbtn">Peta Genangan <i class="fa fa-caret-down"></i></button>
+							<div class="dropdown-content">
+								<a href="Kelurahan Muarareja.html">Kelurahan Muarareja</a>
+                            <a href="Kelurahan Tegalsari.html">Kelurahan Tegalsari</a>
+                            <a href="Kelurahan Mintaragen.html">Kelurahan Mintaragen</a>
+                            <a href="Kelurahan Panggung.html">Kelurahan Panggung</a>
+							</div>
+						</div>
+                <a href="Informasi.html">Informasi</a>
+                <a href="Kontak.html">Kontak</a>
+				</div>
+			</div>
+        </div>
+    </div>
+	<div id="body" style="color:#070705; text-align:center; margin-top: 50px; margin-bottom: 50px;">
+		<h5><b>DASHBOARD PEMODELAN GENANGAN BANJIR ROB KELURAHAN MUARAREJA</b></h5>
+		<p><i>Berdasarkan Pengolahan Data, 2024</i></p>
+	</div>
+		<div class="container-map">
+			<iframe class="responsive-iframe" src="https://thunbergii.app.carto.com/map/e2ba62c4-7b5b-4964-800b-507c1c873fe0"></iframe>
+		</div>
+	<div id="footer">
+       <i>@Copyright Geographic Information System Gadjah Mada University 2024</i>
+    </div>
+</body>
+</html>
